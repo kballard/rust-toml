@@ -4,11 +4,16 @@
 #[crate_type = "lib"];
 #[feature(phase)];
 
+#[feature(phase)];
+
 /// A TOML [1] configuration file parser
 ///
 /// Copyright (c) 2014 by Michael Neumann (mneumann@ntecs.de)
 ///
 /// [1]: https://github.com/mojombo/toml
+
+#[phase(syntax, link)]
+extern crate log;
 
 extern crate serialize;
 extern crate collections;
